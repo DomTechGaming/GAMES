@@ -37,7 +37,7 @@ end
 
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "LuckyBlock", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest",IntroEnabled = false})
+local Window = OrionLib:MakeWindow({Name = "Radon Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest",IntroEnabled = false})
 
 local Tab = Window:MakeTab({
 	Name = "LuckyBlocks",
