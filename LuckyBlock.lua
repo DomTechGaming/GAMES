@@ -1,3 +1,4 @@
+--lucky blocks
 local PlayersSV = game:GetService("Players").LocalPlayer.Character.Humanoid
 local Loading = game:WaitForChild("Players")
 local TeleportSV = game:GetService("TeleportService")
@@ -105,11 +106,10 @@ Tab:AddToggle({
 	Name = "Auto ALL",
 	Default = false,
 	Callback = function(Value)
-            while Value do
-                game:GetService("ReplicatedStorage"):WaitForChild("SpawnGalaxyBlock"):FireServer()
-                game:GetService("ReplicatedStorage"):WaitForChild("SpawnRainbowBlock"):FireServer()
-                wait()
-            end
+        while Value do
+            game:GetService("ReplicatedStorage"):WaitForChild("SpawnGalaxyBlock"):FireServer()
+            game:GetService("ReplicatedStorage"):WaitForChild("SpawnRainbowBlock"):FireServer()
+            wait()
         end
 	end
 })
