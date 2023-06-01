@@ -104,16 +104,11 @@ Tab:AddButton({
 Tab:AddToggle({
 	Name = "Auto ALL",
 	Default = false,
-	Callback = function(Auto1)
-        if Auto1 == true then
-            while true do
-                game:GetService("ReplicatedStorage"):WaitForChild("SpawnLuckyBlock"):FireServer()
-                game:GetService("ReplicatedStorage"):WaitForChild("SpawnSuperBlock"):FireServer()
-                game:GetService("ReplicatedStorage"):WaitForChild("SpawnDiamondBlock"):FireServer()
+	Callback = function(Value)
+            while Value do
                 game:GetService("ReplicatedStorage"):WaitForChild("SpawnGalaxyBlock"):FireServer()
                 game:GetService("ReplicatedStorage"):WaitForChild("SpawnRainbowBlock"):FireServer()
-                wait(0.1)
-                if Auto1 == false then break end
+                wait()
             end
         end
 	end
